@@ -1,11 +1,19 @@
+#![no_std]
+
 #[cfg(test)]
 mod tests;
 
 use core::{
-    cmp::min,
+    clone::Clone,
+    cmp::{Ord, PartialEq, min},
+    default::Default,
     fmt,
+    iter::Iterator,
     ops::{Index, IndexMut},
-    str,
+    option::Option::{self, None, Some},
+    panic,
+    result::Result::{self, Err, Ok},
+    str, write,
 };
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
