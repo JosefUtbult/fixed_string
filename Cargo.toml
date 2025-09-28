@@ -3,4 +3,10 @@ name = "fixed_string"
 version = "0.1.0"
 edition = "2024"
 
+readme = "README.md"
+license-file = "LICENSE"
+description = "Simple fixed string implementation. Allows for dynamic string creation with formatting capabilities under a no_std codebase."
+homepage = "https://github.com/JosefUtbult/fixed_string"
+repository = "https://github.com/JosefUtbult/fixed_string"
+
 [dependencies]
